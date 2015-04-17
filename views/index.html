@@ -1,0 +1,46 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>幸运抽奖</title>
+<link href="/assets/css/normalize.css" type="text/css" rel="stylesheet" />
+<link href="/assets/css/index.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+	<header class="panel">
+		<ul class="menu">
+			<li><input type="radio" name="prizeType" value="0" id="radio1"><label for="radio1">现金红包奖</label></li>
+			<li><input type="radio" name="prizeType" value="1"  id="radio2"><label for="radio2">五等奖</label></li>
+			<li><input type="radio" name="prizeType" value="2"  id="radio3"><label for="radio3">四等奖</label></li>
+			<li><input type="radio" name="prizeType" value="3"  id="radio4"><label for="radio4">三等奖</label></li>
+			<li><input type="radio" name="prizeType" value="4"  id="radio5"><label for="radio5">二等奖</label></li>
+			<li><input type="radio" name="prizeType" value="5"  id="radio6"><label for="radio6">一等奖</label></li>
+		</ul>
+	</header>
+
+	<div class="" style="height:500px; width:1100px; margin: 0 auto; margin-top: 100px; overflow: hidden;">
+		<div id="div1"></div>
+	</div>
+	<div class="btn-wrap">
+		<button id="prize-btn">开始</button>
+		<i class="icon-close"></i>
+	</div>
+	
+	<div class="winner-list-wrap">
+		<ul id="J_winnerList" class="winner-list"></ul>
+	</div>
+
+	<div class="preview" id="J_preview">
+		<div class="pic">
+			<img src="http://localhost:3000/assets/pic/orign/陈利顺.JPG">
+		</div>
+	</div>
+
+	<script src="/assets/scripts/jquery-2.1.3.js"></script>
+	<script src="/assets/scripts/underscore-1.7.0.js"></script>
+	<script src="/assets/scripts/jquery.storageapi.js"></script>
+	<script src="/assets/scripts/index.js"></script>
+</body>
+</html>

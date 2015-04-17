@@ -1,0 +1,16 @@
+{
+  "name": "lucky-draw",
+  "version": "0.0.1",
+  "description": "lucky draw",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "stylering",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.2.2",
+    "express": "^4.11.2",
+    "jade": "^1.9.1"
+  }
+}

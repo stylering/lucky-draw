@@ -1,0 +1,172 @@
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+body{
+	background: url(../images/BG_01.png) 0 0 no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.panel {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 50px;
+}
+
+.menu {
+	width: 600px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.menu, .menu li {
+	list-style: none;
+}
+.menu li {
+	float: left;
+	line-height: 50px;
+	padding: 0 10px;
+}
+.menu li label {
+	margin-left: 5px;
+	color: #fff;
+}
+
+#div1 {
+	width:200px; 
+	height:200px;
+	position:relative;
+	margin:150px auto;
+	background:null;
+	-webkit-transform:perspective(100000px) rotateX(-2deg) rotateY(0deg);
+	transform:perspective(100000px) rotateX(-2deg) rotateY(0deg);
+	-webkit-transform-style:preserve-3d;
+	transform-style:preserve-3d;
+}
+#div1 div.hid {
+	position:absolute; 
+	left:50%; 
+	margin-left:-67px; 
+	margin-top:-90px; top:50%; 
+	background-size:100% 100%; 
+	font-size:50px;
+	-webkit-transition:1s all ease;
+	transition:1s all ease;
+	overflow:hidden; 
+	width:115px; 
+	height:150px;
+	-webkit-transform:rotateY(0deg) translateZ(0px);
+	transform:rotateY(0deg) translateZ(0px);
+}
+#div1 div.img {
+	top:10px; 
+	left:10px; 
+	margin:0; 
+	box-shadow:0 0 10px white; 
+	width:100px; 
+	height:150px; 
+	position:absolute; 
+	border-radius:2px;
+}
+
+.btn-wrap {
+	position: fixed;
+	text-align: center;
+	height: 50px;
+	bottom: 250px;
+	width: 100px;
+	left: 50%;
+	margin-left: -50px;
+}
+.btn-wrap button {
+	font-size: 22px;
+	line-height: 50px;
+	width: 100px;
+	font-weight: bold;
+	-webkit-border-radius: 5px;
+}
+
+.winner-list-wrap {
+	overflow: auto;
+	width: 100%;
+	position: fixed;
+	bottom: 10px;
+}
+
+.winner-list, .winner-list li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.winner-list {
+	border: 2px solid #fff;
+	height: 210px;
+	width: 2000%;
+}
+.winner-list li{
+	width: 153px;
+	height: 200px;
+	padding: 0 5px;
+	overflow: hidden;
+	text-align: center;
+	vertical-align: middle;
+	display: table-cell;
+	border: 1px solid #fff;
+	position: relative;
+}
+
+.winner-list li img {
+	width: auto;
+	height: auto;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.winner-list li .name {
+	position: absolute;
+	bottom: 10px;
+	color: yellow;
+	font-size: 20px;
+	width: 100%;
+	text-align: center;
+}
+
+.icon-close {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background: url(../images/icon-close.png) 0 0 no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	visibility: hidden; 
+}
+
+/*预览照片*/
+.preview {
+	position: fixed;
+	width: 300px;
+	height: 500px;
+	left: 50%;
+	top: 50%;
+	margin-left: -150px;
+	margin-top: -250px;
+	display: none;
+}
+.preview .pic {
+	width: 300px;
+	height: 500px;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+.preview .pic img {
+	width: auto;
+	height: auto;
+	max-width: 100%;
+	max-height: 100%;
+}
